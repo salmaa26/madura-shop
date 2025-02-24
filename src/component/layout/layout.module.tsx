@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react"
 
 export interface ILayout {
-
-    children?: React.ReactNode;
+    children?: React.ReactNode
 }
 
-export default function({children}: ILayout) {
-  return (
-    <div className='bg-slate-300 w-screen h-full flex flex-col justify-center items-center'>
-        {children}
-    </div>
-  )
+export default function Layout({ children }: ILayout) {
+    return (
+        <div className="bg-white w-screen h-full flex flex-col justify-center items-center">
+            {children}
+        </div>
+    )
 }
